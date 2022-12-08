@@ -1,0 +1,45 @@
+/* #main {
+			background-image: url('bgheader.png');
+			padding: 1px;
+			text-align: center;
+		} */
+
+
+		#head {
+			background-color: #22262b;
+			padding: 40px;
+			text-align: left;
+			font-size: large;
+			color: aliceblue;
+			text-indent: 1%;
+
+		}
+
+		body {
+			background-color: #30363d;
+			/* background-image: url('transmylogo.png');
+			background-repeat: no-repeat;
+			background-size: 350px 350px;
+			background-position-x: 780px;
+			background-position-y: 300px; */
+			/* background-; */
+		}
+
+		a:link,a:visited,a:hover,a:active {
+			color:white;
+			font-family: 'Roboto Condensed';
+			text-decoration: none;
+		}
+
+		/* #mainheadp {
+			color:aliceblue;
+			font-size: 100px;
+			font-family: 'Roboto';
+		} */
+
+		/* h1 {
+			color : black;
+			font-family: 'Roboto';
+			text-align: center;
+			font-size: 100px;
+		} */
