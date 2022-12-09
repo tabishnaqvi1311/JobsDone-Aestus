@@ -1,45 +1,99 @@
-/* #main {
-			background-image: url('bgheader.png');
-			padding: 1px;
-			text-align: center;
-		} */
-
-
 		#head {
 			background-color: #22262b;
-			padding: 40px;
-			text-align: left;
-			font-size: large;
-			color: aliceblue;
-			text-indent: 1%;
-
-		}
+            overflow: auto;
+            padding: auto;
+	    }
 
 		body {
 			background-color: #30363d;
-			/* background-image: url('transmylogo.png');
-			background-repeat: no-repeat;
-			background-size: 350px 350px;
-			background-position-x: 780px;
-			background-position-y: 300px; */
-			/* background-; */
+            margin: 0;
+            padding: 0;
 		}
 
-		a:link,a:visited,a:hover,a:active {
+        /*Header stuff is here*/
+
+        #links {
+            text-align: center;
+            word-spacing: 60px; 
+            font-size: 30px;
+        }
+
+        #img {
+            float: left;
+            margin-left: 30px; 
+        }
+
+		a.hlinks:link,a.hlinks:visited,a.hlinks:active {
 			color:white;
 			font-family: 'Roboto Condensed';
 			text-decoration: none;
 		}
 
-		/* #mainheadp {
-			color:aliceblue;
-			font-size: 100px;
-			font-family: 'Roboto';
-		} */
+        a.hlinks:hover {
+            background: url("bgheader.png");
+            background-size: 100px;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            transition: 0.7s;
+        }
 
-		/* h1 {
-			color : black;
-			font-family: 'Roboto';
-			text-align: center;
-			font-size: 100px;
-		} */
+        #login {
+            text-align: end;
+            float:right;
+            font-family: "Roboto Condensed";
+            font-size: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        a.linklogin:link,a.linklogin:active,a.linklogin:visited {
+            text-decoration: none;
+            color: #ffffff; 
+            border: 1px solid aqua;
+            margin-right:10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-size: 85px;
+            border-radius: 5px;
+            transition: 0.2s;
+        }
+
+        a.linklogin:hover {
+            background: url("bgheader.png");
+            color: #22262b;
+            background-size: 85px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: 0.9s;
+        }
+
+        a.linksign:link,a.linksign:active,a.linksign:visited {
+            text-decoration: none;
+            color: #ffffff; 
+            margin-right:50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-size: 100px;
+        }
+
+        a.linksign:hover{
+            background: url("bgheader.png");
+            background-size: 100px;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            transition: 0.7s;
+        }
+
+        #login,#links,#img {
+            margin-top: 40px;
+        }
+
+        /* Header stuff ends here */
