@@ -1,6 +1,10 @@
-* {
+* {                     
     margin: 0;
-    padding: 0;
+    padding: 0;     /*This makes it so all the elemnts span the entire page*/
+}
+
+hr {
+    margin: 7px;
 }
 
 a:visited,a:link,a:active {
@@ -49,6 +53,8 @@ a.headerlink:hover {
     transition: 0.5s;
 }
 
+/* signup button shenanigans */
+
 .signup {
     float: right;
     text-align: center;
@@ -58,7 +64,6 @@ a.headerlink:hover {
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
     font-size: 15px;
-    
 }
 
 button.signup:hover {
@@ -68,24 +73,82 @@ button.signup:hover {
     transition: 0.5s;
 }
 
-.loginlink {
-    text-align: right;
+.container_ {
+    font-size: small;
+    color: #22262b;
+    background-color: aliceblue;
+    display: inline-block;
+    height: 250px;
+    width: 300px;
+    text-align: left;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* 
-.container {
-    display: flex;
-    justify-content: space-between;
-} */
+label {
+    font-weight: bold;
+}
+
+h1,.ps {
+    text-align: center;
+}
+
+input {
+    border: 1px transparent;
+    display: block;
+    padding: 10px;
+    border-image: url(images/bgheader.png);
+    -webkit-border-image: url(images/bgheader.png);
+}
+
+button.cancel,button.signupbutton {
+    padding: 7px 50px 7px 50px;
+    margin-top: 10px;
+    border: none;
+    opacity: none;
+}
+
+input[type=text]:focus,input[type=password]:focus {
+    background-color: #ddd;
+}
+
+button.cancel {
+    background-color: tomato;
+    opacity: 1;
+}
+
+button.signupbutton {
+    background: url(images/bgheader.png);
+    background-size: cover;
+    float: right;
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    right: 563px;
+    top: 270px;
+}
+
+.close:hover {
+    color: tomato;
+    cursor: pointer;
+}
+
+.mod {
+    display: none;
+}
+
+form {
+    padding: 250px;
+}
 
 .right {
     font-family: 'Roboto Condensed',sans-serif;
-    /* background-color: red; */
     background-image: url(images\\office.webp);
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 80px;
-    /* display: block; */
     height: 900px;
 }
 
@@ -100,10 +163,10 @@ button.signup:hover {
     display: block;
 }
 
-.container2 {
+/* .container2 {
     display: flex;
     justify-content: center;
-}
+} */
 
 .icons {
     height: 30vh;

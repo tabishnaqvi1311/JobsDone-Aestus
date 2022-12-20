@@ -29,13 +29,35 @@
 					<li>
 						<a href="#" class="headerlink">About</a>
 					</li>
-					<button class="signup" type="button">
+					<button onclick="document.getElementById('signup').style.display='block'" class="signup" type="button">
 						Sign Up
 					</button>
-					<!-- <a href="#" class="loginlink">Log In</a> -->
-					<!-- <li class="login">
-						<a href="#" class="loginlink">Log In</a>
-					</li> -->
+					<div id="signup" class="mod">
+						<span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close">&times;</span>
+						<form class="form">
+							<div class="container_">
+								<h1>Sign Up</h1>
+								<p class="ps">and never miss out on a single task again.</p>
+								<label for="email">Email</label>
+								<input type="text" placeholder="Enter email" name="email" required>
+
+								<label for="pass">Password</label>
+								<input type="password" placeholder="Enter password" name="pass" required>
+
+								<label for="passrepeat">Repeat Password</label>
+								<input type="password" placeholder="Repeat Password" name="passrepeat" required>
+
+								<p>By creating an account, you agree to our <a href="#" style="color: dodgerblue;">Terms & Privacy</a></p>
+
+								<div class="clear">
+									<button type="button" onclick="docment.getElementById('signup').style.display='none'" class="cancel">Cancel</button>
+									<button type="button" class="signupbutton">Sign Up</button>
+								<hr>
+								<p>or Log In</p>
+								</div>
+							</div>
+						</form>
+					</div>
 				</ul>
 			</div>
 		</header>
@@ -49,7 +71,8 @@
 	</div>
 	<div class="container2">
 		<div class="icons">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellendus possimus deserunt consequatur debitis, nisi reiciendis blanditiis, aspernatur harum perspiciatis sint eius veritatis voluptas incidunt. Illum sit odit veritatis, nobis corrupti accusamus numquam vel?</p>
+			<img src="" alt="">
+			pp
 		</div>
 	</div>
 	<div class="footer">
@@ -57,5 +80,12 @@
 			<p><pre>Copyright&copy; All Rights Reserved</pre></p>
 		</footer>
 	</div>
+	<!-- <script src="test.js">var mod = document.getElementById(signup);
+
+		window.onclick = function(event) {
+			if(event.target == mod) {
+				modal.style.display = 'none'
+			}
+		}</script> -->
 </body>
 </html>
