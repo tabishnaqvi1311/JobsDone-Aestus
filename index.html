@@ -3,42 +3,54 @@
 <head>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-	
+	<link rel="stylesheet" href="styles.css">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>JobsDone</title>
-
-	<link rel="icon" type="image/x-icon" href="favicon.png">
-	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<header>
-		<div id='head'>
-		<nav>
-			<div id="links">
-				<a class="Name" href="#">
-					<img clas="img" src="favicon.png" width="40px" height="40px">
-				</a>
-				<a class="hlinks" href="#">Home</a>
-				<a class="hlinks" href="#">About</a>
-				<a class="hlinks" href="#">Contact</a>
-				<a class="hlinks" href="#">Services</a>
-				<a class=linklogin href="#"><b>Login</b></a>
-				<a class=linksign href="#"><b>Sign Up</b></a>
+	<div class="header">
+		<header>
+			<div class="navbar">
+				<ul>
+					<!-- <li class="img_navbar"><img src="favicon.png" alt="Home" height="45px" width="45px"></li> -->
+					<li>
+						<a href="index.html" class="headerlink">Home</a>
+					</li>
+					<li>
+						<a href="#" class="headerlink">Services</a>
+					</li>
+					<li>
+						<a href="#" class="headerlink">Contact</a>
+					</li>
+					<li>
+						<a href="#" class="headerlink">About</a>
+					</li>
+					<button class="signup" type="button">
+						Sign Up
+					</button>
+					<!-- <a href="#" class="loginlink">Log In</a> -->
+					<!-- <li class="login">
+						<a href="#" class="loginlink">Log In</a>
+					</li> -->
+				</ul>
 			</div>
-		</nav>
+		</header>
+	</div>
+	<div class="container">
+		<div class="right">
+				<p class="upper">Task Management.</p>
+				<p class="lower"><b>Redefined.</b></p>
+			</div>
 		</div>
-	</header>
-	<div id="mainbody">	
-		<p><b>JobsDone helps track and manage all your tasks.<img class="imgtxt" src="list-flat-illustration_183665-75.webp" width="300px" height="250px"></b></p>
+	</div>
+	<div class="footer">
+		<footer>
+			<p>Copyright&copy; All Rights Reserved </p>
+		</footer>
 	</div>
 </body>
-</div>
 </html>
