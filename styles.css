@@ -26,9 +26,8 @@ li {
 
 header {
     background-color: #22262b;
-    color: white;
-    height: 70px;
-    
+    color: aliceblue;
+    height: 70px;   
 }
 
 a.headerlink:link,a.headerlink:visited,a.headerlink:active {
@@ -36,7 +35,7 @@ a.headerlink:link,a.headerlink:visited,a.headerlink:active {
 }
 
 a.headerlink:hover {
-    background: url(bgheader.png);
+    background: url(images\\bgheader.png);
     background-size: 100px;
     background-clip: text;
     -webkit-background-clip: text;
@@ -57,7 +56,7 @@ a.headerlink:hover {
 }
 
 button.signup:hover {
-    background: url(bgheader.png);
+    background: url(images\\bgheader.png);
     background-size: 90px;
     color: white;
     transition: 0.5s;
@@ -74,16 +73,22 @@ button.signup:hover {
 } */
 
 .right {
-    color: black;
     font-family: 'Roboto Condensed',sans-serif;
     /* background-color: red; */
-    background-image: url(office.webp);
+    background-image: url(images\\office.webp);
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 80px;
-    display: block;
-    height: 800px;
+    /* display: block; */
+    height: 900px;
 }
+
+.upper,.lower {
+    display: flex;
+    color:#22262b;
+    justify-content: right;
+}
+
 
 .footer{
     background-color: #30363d;
