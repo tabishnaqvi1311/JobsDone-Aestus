@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">	
+	<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="../css/styles.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aestus</title>
+</head>
+
+<body>
+	<header class="headerout">
+		<div class="imgflex">
+			<img class="imgin" src="../images/favicon.png">
+			<div class="buttons">
+				<button onclick='document.getElementbyId(signup).style.display="block"' class="signupbutton" type="button">
+					<b>Sign Up</b>
+				</button>
+				<div id='signup' class="modal">
+					<form class="frm">
+						<div class="container">
+							<label for="email">Email</label>
+							<input type="email" name="email">
+							<label for="psw">Password</label>
+							<input type="password" name="psw">
+							<label for="reppsw">Repeat Password</label>
+							<input type="password" name="reppsw">
+						</div>
+					</form>	
+				</div>
+				<button class="loginbutton" type="button">
+					<b>Login</b>
+				</button>
+			</div>
+		</div>
+	</header>
+	<header class="header">
+		<div class="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="mainbody">
+		<div class="flexcontainer">
+			<p>Task Management. <br><b>Redefined.</b></p>
+		</div>
+		<div class="btn">
+			<button class="big"><pre>Find out more   ></pre> </button> 
+		</div>
+	</div>
+	<section>
+		<div class="area">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, est? Enim pariatur voluptatum facere sunt quos quam quis praesentium nam similique itaque earum ducimus ea consequuntur quidem nihil iste autem, porro accusantium! Animi optio dolor inventore modi atque quod. Fugiat, accusantium pariatur. Reprehenderit voluptate ullam sit dolorum quisquam veniam illo incidunt dolorem! Necessitatibus ab tempore quasi praesentium magni provident enim nemo libero sequi quos, rem, mollitia culpa corrupti numquam, quas laudantium eaque accusantium consectetur quam facilis cupiditate optio unde eveniet blanditiis. Quae perferendis est debitis unde, explicabo mollitia iste impedit hic quaerat soluta ea veritatis laboriosam accusamus, veniam quo cupiditate ex, libero sit. Provident aliquam itaque illum maxime nihil tenetur possimus doloremque amet, hic officiis numquam, soluta, nam eum eius saepe maiores tempora. Aliquam sed perferendis nam unde facere neque adipisci voluptatem asperiores fuga itaque ipsam aspernatur illo 
+		</div>
+	</section>
+	<footer>
+		<div class="footer">
+			Copyright&copy; All rights reserved
+		</div>
+	</footer>
+	<script>
+		var modal = document.getElementById(signup);
+
+		window.onclick = function(event) {
+		if(event.target == modal) {
+			modal.style.display = 'none'
+			}
+		}
+	</script>
+</body>
+
+
+</html>
