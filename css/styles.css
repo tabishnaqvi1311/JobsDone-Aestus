@@ -51,6 +51,7 @@ button.signupbutton:hover {
     background-size: cover;
     transition: 0.5s;
     color: aliceblue;
+    transition-timing-function: ease-in;
 }
 
 button.loginbutton {
