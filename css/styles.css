@@ -49,9 +49,8 @@ header.headerout {
 button.signupbutton:hover {
     background: url(../images/bgheader.png);
     background-size: cover;
-    transition: 0.5s;
+    transition: 0.5s ease-out;
     color: aliceblue;
-    transition-timing-function: ease-in;
 }
 
 button.loginbutton {
@@ -72,6 +71,7 @@ button.loginbutton:hover {
 
 .header {
     background-color: #22262b;
+    box-shadow: 0px 5px 20px -1px #22262b;
 }
 
 .navbar {
@@ -133,6 +133,7 @@ button.big {
     padding: 10px 150px;
     font-size: large;
     font-weight: bold;
+    opacity: .8;
 }
 
 button.big:hover {
@@ -156,9 +157,16 @@ button.big:hover {
     text-align: center;
 }
 
+
+/* animations O(∩_∩)O  */
+
+
 /* .
 . */
 /* responsiveness of page */
+
+
+
 
 @media (min-width: 769px) {
     .navbar,ul {
@@ -177,4 +185,3 @@ button.big:hover {
         justify-content: space-between;
     }
 }
-
