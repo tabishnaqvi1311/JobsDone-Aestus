@@ -18,21 +18,9 @@
 		<div class="imgflex">
 			<img class="imgin" src="../images/favicon.png">
 			<div class="buttons">
-				<button onclick='document.getElementbyId(signup).style.display="block"' class="signupbutton" type="button">
+				<button id="signup" class="signupbutton" type="button">
 					<b>Sign Up</b>
 				</button>
-				<div id='signup' class="modal">
-					<form class="frm">
-						<div class="container">
-							<label for="email">Email</label>
-							<input type="email" name="email">
-							<label for="psw">Password</label>
-							<input type="password" name="psw">
-							<label for="reppsw">Repeat Password</label>
-							<input type="password" name="reppsw">
-						</div>
-					</form>	
-				</div>
 				<button class="loginbutton" type="button">
 					<b>Login</b>
 				</button>
@@ -69,12 +57,8 @@
 		</div>
 	</footer>
 	<script>
-		var modal = document.getElementById(signup);
-
-		window.onclick = function(event) {
-		if(event.target == modal) {
-			modal.style.display = 'none'
-			}
+		document.getElementById('signup').onclick = function () {
+			location.href = "../html/signup.html"
 		}
 	</script>
 </body>
