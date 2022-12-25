@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -72,6 +73,8 @@ button.loginbutton:hover {
 .header {
     background-color: #22262b;
     box-shadow: 0px 5px 20px -1px #22262b;
+    position: sticky;
+    top: 0;
 }
 
 .navbar {
@@ -80,7 +83,6 @@ button.loginbutton:hover {
     padding: 14px 10px;
     text-transform: uppercase;
     text-align: center;
-    display: block;
 }
 
 .navbar a {
@@ -107,81 +109,116 @@ button.loginbutton:hover {
 
 .mainbody {
     background-image: url(../images/office.webp);
-    height: 800px;
+    height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
     /* overflow: auto; */
 }
 
 .flexcontainer {
+    display: inline-flex;
     margin-left: 20px;
     font-size: 65px;
     overflow: auto;
+    flex-direction: column;
+    align-items: center;
 }
 
 .btn {
-    margin-left: 100px;
+    
     overflow: auto;
-    display: inline;
 }
 
 button.big {
     text-transform: uppercase;
     border-radius: 20px;
-    border: 1px solid aliceblue;
-    background: transparent;
-    padding: 10px 150px;
+    border: none;
+    color: white;
+    background-color: #22262b;
+    padding: 10px 50px;
     font-size: large;
     font-weight: bold;
-    opacity: .8;
 }
 
 button.big:hover {
-    background-color: #22262b;
-    color: white;
+    color: #22262b;
+    background: url(../images/bgheader.png);
+    background-size: cover;
     transition: 0.5s ease-in-out;
-    padding: 10px 150px;
     font-size:large;
     cursor: pointer;
 }
 
-.area {
-    height: 100px;
-    text-align: center;
-    overflow: auto;
+.body2 {
+    background-color: #30363d;
+    height: 600px;
 }
 
-.footer {
-    color: aliceblue;
+.box {
+    color: white;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
     background-color: #22262b;
+    color: white;
     text-align: center;
+    padding: 5vh;
 }
-
-
 /* animations O(∩_∩)O  */
-
 
 /* .
 . */
 /* responsiveness of page */
-
-
-
-
-@media (min-width: 769px) {
+@media (min-width: 763px) {
     .navbar,ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
         width: 50%;
         max-width: 1150px;
         margin: 0 auto;
-    }
+    } 
 }
 
 @media (min-width: 1010px) {
     .navbar,ul {
         flex-direction: row;
         justify-content: space-between;
+    }
+}
+
+@media (max-width: 600px ) {
+    .mainbody {
+        background-image: none;
+        background-color: #30363d;
+        color: white;
+    }
+
+    .mainbody p {
+        text-align: center;
+    }
+
+    .body2 {
+        background-color: aliceblue;
+    }
+    
+    .box {
+        color: #22262b;
+    }
+
+    button.big {
+        color:white;
+        background-color: #22262b;
+    }
+
+    button.big:hover {
+        color: #22262b;
+        background: url(../images/bgheader.png);
+        background-size: cover;
     }
 }
