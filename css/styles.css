@@ -151,7 +151,7 @@ button.big:hover {
 
 .body2 {
     background-color: #30363d;
-    height: 600px;
+    height: 700px;
 }
 
 .box {
@@ -160,6 +160,14 @@ button.big:hover {
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
+}
+
+.downimg {
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 12px -2px #000000;
 }
 
 footer {
@@ -173,7 +181,7 @@ footer {
 /* .
 . */
 /* responsiveness of page */
-@media (min-width: 763px) {
+@media (min-width: 600px) {
     .navbar,ul {
         display: flex;
         flex-direction: column;
@@ -185,7 +193,7 @@ footer {
     } 
 }
 
-@media (min-width: 1010px) {
+@media (min-width: 900px) {
     .navbar,ul {
         flex-direction: row;
         justify-content: space-between;
@@ -220,5 +228,10 @@ footer {
         color: #22262b;
         background: url(../images/bgheader.png);
         background-size: cover;
+    }
+
+    .downimg {
+        height: 200px;
+        width: 250px;
     }
 }
