@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sign.css">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="signup.css">
     <meta charset="UTF-8">
@@ -9,6 +13,51 @@
     <title>Get Started Today!</title>
 </head>
 <body>
-    
+    <header class="headerout">
+		<div class="imgflex">
+			<img class="imgin" src="../images/favicon.png">
+			<div class="buttons">
+				<button id="signup" class="signupbutton" type="button">
+					<b>Sign Up</b>
+				</button>
+				<button class="loginbutton" type="button">
+					<b>Login</b>
+				</button>
+			</div>
+		</div>
+	</header>
+	<header class="header">
+		<div class="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+    <div class="box1">
+        <div class="flex">
+            <p class="pout">Sign Up!<br>It's free.</p><hr>
+            <form class="frm">
+                <label for="email"></label>
+                <input type="email" name="email" placeholder="Email">
+                <label for="psw"></label>
+                <input type="password" name="psw" placeholder="Enter Password">
+                <label for="reppsw"></label>
+                <input type="password" name="reppsw" placeholder="Repeat Password">
+            </form>
+        </div>
+        <div class="priv">
+            <p>By creating an account you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p><hr>
+        </div>
+        <div class="login">
+            <p>or <a href="#">Log In</a></p>
+        </div>
+    </div>
+    <footer>
+		Founder - Tabish Naqvi<br>
+		Copyright&copy; All Rights Reserved.
+	</footer>
 </body>
 </html>
