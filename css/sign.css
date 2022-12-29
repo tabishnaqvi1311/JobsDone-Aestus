@@ -120,7 +120,6 @@ button.loginbutton:hover {
 .flex {
     font-weight: bold;
     font-size: xxx-large;
-
 }
 
 .frm {
@@ -150,6 +149,13 @@ input {
     border-radius: 5px ;
 }
 
+input[type=email]:focus,input[type=password]:focus {
+    border: 1px aquamarine solid;
+    outline: none;
+    background-color: #ddd;
+
+}
+
 .priv p a {
     color: dodgerblue;
 }
@@ -157,11 +163,16 @@ input {
 .priv p {
     text-align: center;
     font-size: 17px;
+    
 }
 
 .login {
     text-align: center;
     padding: 40px;
+}
+
+.login p {
+    font-size: 20px;
 }
 
 .login p a:visited,a:link,a:active {
