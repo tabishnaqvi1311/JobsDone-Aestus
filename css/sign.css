@@ -126,10 +126,8 @@ button.loginbutton:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: large;
-    font-weight: 100;
-    padding: 20px;
     margin: 20px auto;
+
 }
 
 hr {
@@ -153,7 +151,24 @@ input[type=email]:focus,input[type=password]:focus {
     border: 1px aquamarine solid;
     outline: none;
     background-color: #ddd;
+}
 
+.submitButton { 
+    background-color: #30363d;
+    color: aliceblue;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.submitButton:hover {
+    color: #22262b;
+    background: url(../images/bgheader.png);
+    background-size: cover;
+    transition: .6s ease-in;
+    cursor: pointer;
 }
 
 .priv p a {
