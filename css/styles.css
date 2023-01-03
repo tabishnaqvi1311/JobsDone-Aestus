@@ -10,6 +10,26 @@ body {
     background-color: aliceblue;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
 a {
     text-decoration: none;
 }
@@ -38,9 +58,9 @@ header.headerout {
 }
 
 .signupbutton {
-    background-color: aliceblue;
-    border: 2px aquamarine;
-    color: #30363d;
+    background-color: #22262b;
+    border: none;
+    color: aliceblue;
     padding: 12px;
     margin-right: 15px;
     cursor: pointer;
@@ -51,7 +71,7 @@ button.signupbutton:hover {
     background: url(../images/bgheader.png);
     background-size: cover;
     transition: 0.5s ease-out;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 button.loginbutton {
@@ -201,6 +221,9 @@ footer {
 }
 
 @media (max-width: 600px ) {
+    body {
+        overflow-x: hidden;
+    }
     .mainbody {
         background-image: none;
         background-color: #30363d;
@@ -234,4 +257,5 @@ footer {
         height: 200px;
         width: 250px;
     }
+
 }
