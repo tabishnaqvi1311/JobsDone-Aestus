@@ -2,15 +2,18 @@
 <html lang="en">
 
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">	
-	<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+	<link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300&display=swap"
+		rel="stylesheet">
+	<link rel="icon" href="../images/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="../css/styles.css">
+	<title>JobsDone</title>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Aestus</title>
+	<meta name="description"
+		content="Task management tool that helps users stay organized and achieve work-life balance">
 </head>
 
 <body>
@@ -41,23 +44,50 @@
 	<div class="mainbody">
 		<div class="flexcontainer">
 			<p>Task Management. <br><b>Redefined.</b></p>
-			<div id = "bton" class="btn">
-				<button class="big"><pre>Find out more   ></pre> </button> 
+			<div id="bton" class="btn" onclick = "scrollDown()">
+				<button class="big">
+					<pre>Find out more   ></pre>
+				</button>
 			</div>
 		</div>
 	</div>
 	<section class="body2">
 		<div class="box">
 			<p>Unchecked boxes? <br>We'll handle it.</p>
-			<img class="downimg" src="../images/check.webp" alt="Aestus">
+		</div>
+		<div class="cardflex">
+			<a id = 'sect1' href = "#sect1" class = "card">
+				<div class="front" style="background-image: url(../images/first.webp);">
+					<p>Flip the switch and get organized</p>
+				</div>
+				<div class="back">
+					<p>Take the first step to a more balanced, and organized life with our easy-to-use task management tools.</p>
+				</div>
+			</a>
+			<a id = 'sect2' href = "#sect2" class = "card ">
+				<div class="front" style="background-image: url(../images/second3.webp);">
+					<p>Work smarter, not harder</p>
+				</div>
+				<div class="back">
+					<p>let us help you achieve a balanced and productive lifestyle</p>
+				</div>
+			</a>
+			<a id = 'sect3' href = "#sect3" class = "card">
+				<div class="front" style="background-image: url(../images/clock.webp);">
+					<p>Time is as precious as money </p>
+				</div>
+				<div class="back">
+					<div>
+					<p>Save both with our easy-to-use task management system Lorem ipsum dolor sit amet.</p>
+					</div>
+				</div>
+			</a>
 		</div>
 	</section>
-	<footer>
+	<footer id = 'foo'>
 		Founder - Tabish Naqvi<br>
 		Copyright&copy; All Rights Reserved.
 	</footer>
 	<script src="../js/index.js"></script>
 </body>
-
-
 </html>
