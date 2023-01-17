@@ -1,7 +1,9 @@
+/* CSS for the landing page */
+
 * {
-    box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;
-    scroll-behavior: smooth;
+    box-sizing: border-box;                           /*removes unnecessary y scroll */
+    font-family: 'Roboto Condensed', sans-serif;      
+    scroll-behavior: smooth;                          /* smooth scrolling effect */
 }
 
 body {
@@ -12,7 +14,7 @@ body {
 }
 
 /* width */
-::-webkit-scrollbar {
+::-webkit-scrollbar {               
     width: 10px;
 }
 
@@ -32,8 +34,10 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none;               /* no underline on <a> elements */
 }
+
+/* HEADER */
 
 ul {
     list-style-type: none;
@@ -105,6 +109,7 @@ button.loginbutton:hover {
     padding: 14px 10px;
     text-transform: uppercase;
     text-align: center;
+    font-size: large;
 }
 
 .navbar a {
@@ -122,7 +127,6 @@ button.loginbutton:hover {
 }
 
 /* both headers end here */
-/* signup shenaniganss */
 
 .mainbody {
     background-image: url(../images/office.webp);
@@ -282,15 +286,27 @@ footer {
     background-color: #22262b;
     color: white;
     text-align: center;
-    padding: 5vh;
-    z-index: 2;
+    padding: 2vh;
+}
+.social-ul {
+    display: flex;
+    justify-content: center;
 }
 
-/* animations O(∩_∩)O  */
+.social-ul li {
+    margin: 5px 20px;
+}
 
-/* .
-. */
-/* responsiveness of page */
+.social-ul li a {
+    color: white;
+}
+
+.social-ul li a:hover {
+    color: rgb(168, 175, 175);
+    transition: 0.5s;
+}
+
+/*media queries to handle the responsiveness of page */
 @media (min-width: 600px) {
 
     .navbar,
@@ -357,6 +373,22 @@ footer {
         height: 90rem;
     }
 
+    .social-ul {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social-ul li {
+        margin: 5px 20px;
+    }
+    
+    .social-ul li a {
+        color: white;
+    }
+}
+
+
+@media (max-width: 1000px){
     .cardflex {
         display: flex;
         flex-direction: column;
