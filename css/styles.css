@@ -9,7 +9,7 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     overflow-x: none;
 }
 
@@ -46,7 +46,7 @@ ul {
 }
 
 header.headerout {
-    background-color: aliceblue;
+    background-color: lightgray;
 }
 
 .headerout img {
@@ -80,7 +80,7 @@ button.signupbutton:hover {
 }
 
 button.loginbutton {
-    background-color: aliceblue;
+    background-color: transparent;
     border: none;
     color: #30363d;
 }
@@ -129,23 +129,24 @@ button.loginbutton:hover {
 /* both headers end here */
 
 .mainbody {
-    background-image: url(../images/office.webp);
-    height: 700px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: lightgray;
+    height: 600px;
 }
 
-.flexcontainer {
-    display: inline-flex;
+.gridcontainer {
+    display: grid;
     margin-left: 20px;
     font-size: 65px;
     overflow: auto;
-    flex-direction: column;
-    align-items: center;
 }
 
-.btn {
-    overflow: auto;
+.bodyImage {
+    grid-column: 2;
+    grid-row: 1;
+    height: 34rem;
+    width: 55rem;
+    margin: 20px 0;
+    left:0;
 }
 
 button.big {
@@ -303,7 +304,6 @@ footer {
 
 .social-ul li a:hover {
     color: rgb(168, 175, 175);
-    transition: 0.5s;
 }
 
 /*media queries to handle the responsiveness of page */
@@ -343,6 +343,10 @@ footer {
 
     .mainbody p {
         text-align: center;
+    }
+
+    .bodyImage {
+        display: none;
     }
 
     .body2 {
