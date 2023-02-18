@@ -1,0 +1,13 @@
+.social-ul{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.social-ul li a {
+    color: white;
+}
+
+.social-ul li a:hover {
+    color: #3e3f94;
+}
